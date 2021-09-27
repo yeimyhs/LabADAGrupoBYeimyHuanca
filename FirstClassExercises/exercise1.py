@@ -1,3 +1,10 @@
+##Ejercicio 1
+# el siguiente codigo lee n números en un array y retornar la suma de los mismos
+# Entrada: 1 2 3 4 
+# Salida: 10
+#
+# Autor:  Yeimy Huanca
+
 print("ejercicio1")
 num =0
 arr = []

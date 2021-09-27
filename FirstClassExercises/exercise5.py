@@ -1,3 +1,16 @@
+##Ejercicio 5
+# el siguiente codigo coloca un marco a un texto. 
+# Ingresar una serie de palabras y colocarlas en un marco.
+# Entrada: Hello World!
+# Salida:
+# ****************
+# *              *
+# * Hello World! *
+# *              *
+# ****************
+#
+# Autor:  Yeimy Huanca
+
 print("ejercicio5")
 word = input("word:")
 simb='*'

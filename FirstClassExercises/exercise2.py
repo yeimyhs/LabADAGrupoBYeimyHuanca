@@ -1,4 +1,9 @@
-#def ejercicio2(self):
+##Ejercicio 2
+# el siguiente codigo lee n números en un array y mostrarlos en orden inverso
+# Entrada: 1 3 5 7 9
+# Salida: 9 7 5 3 1
+#
+# Autor:  Yeimy Huanca
 print("ejercicio2")
 num =0
 arr = []

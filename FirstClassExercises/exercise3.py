@@ -1,3 +1,9 @@
+##Ejercicio 3
+# el siguiente codigo lee n números en un array y mostrarlos en orden inverso
+# Entrada: 1 3 5 7 9
+# Salida: 9 7 5 3 1
+#
+# Autor:  Yeimy Huanca
 print("ejercicio3")
 num =0
 print("Coloque'q'para parar.\nIngrese los numeros")

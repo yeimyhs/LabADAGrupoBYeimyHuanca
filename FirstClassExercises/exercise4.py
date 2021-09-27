@@ -1,3 +1,9 @@
+##Ejercicio 4
+# el siguiente codigo lee 3 números y mostrarlos en orden ascendente
+# Entrada: 9 5 8
+# Salida: 5 8 9
+#
+# Autor:  Yeimy Huanca
 
 def ordenamientoPorInsercion(unaLista):
    for indice in range(1,len(unaLista)):

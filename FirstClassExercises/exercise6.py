@@ -1,4 +1,20 @@
-#name = input('What is your name?\n')
+##Ejercicio 6
+# el siguiente codigo modifica el programa anterior 
+# para definir el número de espacios entre el marco y las palabras.
+# Entrada: 3
+#  Hello World!
+# Salida:
+# ********************
+# *                  *
+# *                  *
+# *                  *
+# *   Hello World!   *
+# *                  *
+# *                  *
+# *                  *
+# ********************
+#
+# Autor:  Yeimy Huanca
 print("ejercicio6")
 word = input("word:")
 simb='*'
