@@ -50,21 +50,33 @@ def create(l):
 
 import time
 
-length = int(input("length: "))
+def printTime(length, n):
+    list = create(length)
+    #print(list)
+
+    tik = time.perf_counter() 
+    q= binarySearch(list, n)
+    tak = time.perf_counter()
+
+    if q == -1:
+        print("Does not exist")
+    else:
+        print("The element was found ",list[q])
+
+    print(f"time of execute: {tak - tik} seconds")
+
+
+
+lengths = [10, 100, 1000, 10000, 100000, 1000000]
 
 n = int(input("search?: "))
+
+for i in lengths:
+    printTime(i, n)
+    print("-----------------------------")
+
+print(lengths)
 #list = [1,5,9,7,15,19,20,40,48,50,90,91,100,150,151]
 #print(list)
-list = create(length)
-#print(list)
 
-tik = time.perf_counter() 
-q= binarySearch(list, n)
-tak = time.perf_counter()
 
-if q == -1:
-    print("Does not exist")
-else:
-    print("The element was found ",list[q])
-
-print(f"time of execute: {tak - tik} seconds")
