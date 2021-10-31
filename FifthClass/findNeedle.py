@@ -1,4 +1,4 @@
-##Ejercicio 1   de N^2 a N
+##Ejercicio 4 continuacion de la clase pasada  
 # el siguiente codigo busca un string dado dentro de otro string brindado
 # si encuentra la coincidencia imprime True de lo contrario false
 #
