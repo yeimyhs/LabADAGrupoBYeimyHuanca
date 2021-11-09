@@ -1,5 +1,7 @@
-##Ejercicio 1
-# el siguiente codigo recrea el pseudocodigo de la busqueda binaria
+##Ejercicio 2
+# el siguiente codigo hace uso de el algoritmo de BS 
+# para buscar el mayor inmediato o si existe el elemento retornar ese mismo
+# 
 # Busqueda Binaria
 # Entrada:
 # -                   (ejemplos ya propuestos)
