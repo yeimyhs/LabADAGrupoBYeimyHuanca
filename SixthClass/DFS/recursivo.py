@@ -1,3 +1,23 @@
+##Version Recursiva
+# el siguiente codigo recrea la funcio recursiva de el pseudocoddigo brindado en clase
+# DFS
+# Entrada:
+# -                   (ejemplo ya propuesto)
+# Salida:
+'''
+Nodo visitado  a
+Nodo visitado  b
+Nodo visitado  d
+Nodo visitado  c
+Nodo visitado  f
+Nodo visitado  g
+Nodo visitado  e
+
+'''
+
+# 
+# Autor:  Yeimy Huanca
+ 
 class Pila:
     def __init__(self):
         self.items = []
