@@ -5,19 +5,19 @@
 # -
 # Salida:
 '''
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
     10
+    9
+    8
+    7
+    6
+    5
+    4
+    3
+    2
+    1
 '''
-# Lo que evidencia qque la complejidad de ese for es de n
-# O(n)
+# Lo que evidencia que la complejidad de ese for es de n
+# O(n) no cambia dsi se rrecorre de manera inversa
 #
 # Autor:  Yeimy Huanca
   
