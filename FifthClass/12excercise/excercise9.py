@@ -1,4 +1,4 @@
-##Ejercicio 8
+##Ejercicio9
 # Cual es la complejidad del codigo?
 # 
 # Entrada:
@@ -12,12 +12,12 @@
 '''
 # 
 #
-# la complejidad resultante es de Olog(n)
+# la complejidad resultante es de O sqrt(n)
 
 # dado que el comportamiento se da 0, 1, 4, 9, 16, i^k
 # y dependiendo a n 0 , 1 ,4 ,9  16
 #                   0   1  2  3  4
-#recorreria  sqrt(n) veces por lo que resultaria en Olog(n)
+#recorreria  sqrt(n) veces por lo que resultaria en O sqrt(n)
 # Autor:  Yeimy Huanca
   
 n=16
