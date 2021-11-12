@@ -1,11 +1,19 @@
-##Ejercicio 6
+##Ejercicio 7
 # Cual es la complejidad del codigo?
 # 
 #imprime la suma de numeros de 0 a i
 # Entrada:
 # -
 # Salida:
-# La suma de 1 a 4  es  10
+'''
+    2
+    4
+    8
+    16
+    32
+    64
+2 ^ 6  =  64
+'''
 # 
 #
 # la complejidad resultante es de Olog(n)
