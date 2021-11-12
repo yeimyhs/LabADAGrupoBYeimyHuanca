@@ -1,7 +1,6 @@
 ##Ejercicio 8
 # Cual es la complejidad del codigo?
 # 
-#imprime la suma de numeros de 0 a n
 # Entrada:
 # -
 # Salida:
