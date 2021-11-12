@@ -5,36 +5,22 @@
 # -
 # Salida:
 '''
-    0 x5 veces
-
-    0
-    1
-    2
-    3
-    4
-
-    0
-    2
-    4
-    6
-    8
-                                        5^2 datos
-    0
-    3
-    6
-    9
-    12
-
-    0
-    4
-    8
-    12
-    16
+Cuadrado de 1 1
+Cuadrado de 2 4
+Cuadrado de 2 4
+Cuadrado de 3 9
+Cuadrado de 3 9
+Cuadrado de 3 9
+Cuadrado de 4 16
+Cuadrado de 4 16
+Cuadrado de 4 16
+Cuadrado de 4 16
 
 '''
 # la complejidad resultante es de O(n^2)
-# ya que se tienen dos for anidados
-#
+# ya que se tiene la siguiente induccion
+#   # 1 + 2 + 3 + ... + n = n * (n + 1) / 2   
+# y tambien porque el bucle for se aida dos veces
 # Autor:  Yeimy Huanca
   
 n=5
