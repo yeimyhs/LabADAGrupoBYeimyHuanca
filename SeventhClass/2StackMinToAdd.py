@@ -1,6 +1,6 @@
-##Ejercicio 1
-# el siguiente codigo usa la estructura ya implementada para identificar elementos y simbolos
-# matematicos para realizar su respectivaoperacion
+##Ejercicio 2
+# el siguiente codigousa stacks para hallar el numero de parentesis
+# a agregar para que el la expresion sea logica(unicamente parentesis)  
 #  
 # Stack -ref https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
 #
