@@ -9,6 +9,15 @@ from collections import deque
 #                     Casos de prueba planteados  
 # Salida:
 # 
+# process: ---------------------------
+# Queue deque(['a'])
+# Queue deque(['a', 'b'])
+# Queue deque(['a', 'b', 'c'])
+# Queue deque(['d'])
+# Queue deque(['D', 'E'])
+# Queue deque(['D', 'E', 'F'])
+# Queue deque(['g'])
+# Result: ---------------------------
 # Input: abc$d@ef$@g$
 # Output: abcDEFg
 #
