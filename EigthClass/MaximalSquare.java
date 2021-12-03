@@ -1,62 +1,48 @@
 package EigthClass;
 /*
-##Ejercicio 2
-# Estás en una librería que vende n diferentes libros. 
-Sabes el precio y el número de páginas de cada libro.
-
-Has decidido que el precio total de tus compras será como máximo X. 
-¿Cuál es el número máximo de páginas que puede comprar? 
-Puedes comprar cada libro como máximo una vez.
+##Ejercicio 5
+# Dado un m x n binario 'matrix'
+lleno de 0's y 1's, encuentre el cuadrado más grande que contenga solo 1's 
+y devuelva su área .
 # Entrada: 
-			4 10      // se usa el algoritmo de la mochila
-			4 8 5 3
-			5 12 8 1
+	    // se usa el algoritmo de la mochila con variacion en las comparaciones
+		{{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}};	
 # Salida: 
-            13
+		4
 # Autor:  Yeimy Huanca
 */
 import java.util.*;
-public class BookStore {
+public class MaximalSquare {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();//n libros
-		int x = sc.nextInt();//x dinero disponible
-		int[] h = new int[n];
-		int[] s = new int[n + 1];
+		int [][] matrix = {{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}};
+		int height=matrix.length;//
+		int width=matrix[0].length;//
+		int copia [][] = new int[height+1][width+1];
 
-		for (int i = 0; i < n; i++) {
-			h[i] = sc.nextInt();
-		}
-		for (int i = 0; i < n; i++) {
-			s[i] = sc.nextInt();
-		}
+		int ans=0;
 
-		int[][] data = new int[n + 1][x + 1];
 
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j <= x; j++) {
-				data[i + 1][j] = data[i][j];
-				if (j >= h[i]) {
-					data[i + 1][j] = Math.max(data[i][j - h[i]]  + s[i], data[i + 1][j]);
+		for(int i=0; i<=height; i++){
+			for(int u=0; u<=width; u++){
+				if(i==0||u==0){
+					copia[i][u]=0;
+				}else if(matrix[i-1][u-1] != '0'){
+					copia[i][u]=Math.min(copia[i-1][u-1],Math.min(copia[i-1][u],copia[i][u-1]))+1;
+					ans=Math.max(ans,copia[i][u]);
+				}else{
+					copia[i][u]=0;
 				}
 			}
 		}
 
-		System.out.println(data[n][x]);
+		System.out.println(ans*ans);
 
-		//int n = 0;
-		//n = sc.nextInt(); //numero de piedras
-		//int abc [] = new int[26];
-		//int conc = 0;
-		//ArrayList<String>num= new ArrayList<String>();
-		//int ganadores = 0;
-		//int probR=0;
-		//String name= sc.next();
-		//String piedra ="";
-		//String sgt="";
-		//int n=0;
-		//piedra = name.substring(0,1);
-		// System.out.println(Arrays.asList(paglib));
+		for (int x=0; x < copia.length; x++) {
+			for (int y=0; y < copia[x].length; y++) {
+				System.out.print(copia[x][y]);
+			}
+			System.out.println();
+		}
 	}
 
 
