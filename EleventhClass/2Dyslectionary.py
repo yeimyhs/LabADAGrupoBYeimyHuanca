@@ -1,3 +1,41 @@
+##Ejercicio 2
+# El Disleccionario es como un diccionario ordinario,
+#  salvo que organiza las palabras en función de cómo
+# en lugar de cómo empiezan
+# 
+# Entrada:
+#                     Casos de prueba planteados  
+# Autor:  Yeimy Huanca
+
+
+#Casos de prueba (copiar en consola)
+'''
+apple
+banana
+grape
+kiwi
+pear
+
+airplane
+bicycle
+boat
+car
+'''
+
+#outputs
+'''
+banana
+ apple
+ grape
+  kiwi
+  pear
+
+ bicycle
+airplane
+     car
+    boat
+'''
+#-------------------------------------------
 def sort(longest, words):
     for w in sorted(words, key = lambda w: w[::-1]):
         padding = ' ' * (longest - len(w))
