@@ -1,5 +1,37 @@
 import sys
+##Ejercicio 3
+# Para cada caso de prueba, se genera una línea que
+# contiene las posiciones de todas las ocurrencias 
+# del patrón en el texto, de la primera a la última,'
+# separadas por un solo espacio.
+# 
+# Entrada:
+#                     Casos de prueba planteados  
+# Autor:  Yeimy Huanca
 
+
+#Casos de prueba (copiar en consola)
+'''
+p
+Popup
+helo
+Hello there!
+peek a boo
+you speek a bootiful language
+anas
+bananananaspaj
+
+'''
+
+#outputs
+'''
+2 4
+
+5
+7
+
+'''
+#-------------------------------------------
 def construct_partial_match_table(pattern):   
     string_length = len(pattern)            
     current_prefix_length = 0                                       
@@ -67,8 +99,6 @@ def kmp_string_search(given_string, pattern):
         locations_of_matches.append(str(len(given_string) - pattern_length))
     print(' '.join(locations_of_matches))
 
-# CASO DE PRUEBA
-# Inicialice todas las variables booleanas y de cadena que usaremos durante nuestra prueba
 string_to_check = ''
 pattern_to_check = ''
 check_ready = False
